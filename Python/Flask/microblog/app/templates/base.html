@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title> Home Page :
+        {%if title%}
+        {{ title }}
+        {%else%}
+        NoTitle
+        {%endif%}
+
+        #routes.3.py
+
+    </title>
+</head>
+
+<body>
+    <div> Microblog: <a href="/index">Home</a>
+        <a href="/login">Login</a> ## Login form using Flask.wtf
+    </div>
+    <hr>
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul>
+    {% for message in messages %}
+    <li> {{ message }} </li>
+    {% endfor %}
+</ul>
+{%endif%}
+{%endwith %}
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>

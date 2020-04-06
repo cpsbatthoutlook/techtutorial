@@ -1,0 +1,23 @@
+<html> <head> <title> Home Page :  
+{%if title%}
+    {{ title }}
+{%else%}
+        NoTitle
+{%endif%}
+
+#routes.3.py
+
+</title>
+</head>
+<body>
+Hello, {{ user.username }}
+
+{% for post in posts: %}
+    <div> <p> 
+    {{post.author.username}} says:   {{post.body}}
+</p> </div>
+    {% endfor %}
+
+
+</body>
+</html>
