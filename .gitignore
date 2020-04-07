@@ -1,0 +1,8 @@
+**/*.log
+**/.vagrant
+**/.git
+**/id_rsa
+**/authorized_keys
+**/id_rsa.pub
+**/*.ppk
+**/__pycache__

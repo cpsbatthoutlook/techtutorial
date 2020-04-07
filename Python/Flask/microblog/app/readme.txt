@@ -1,5 +1,8 @@
 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 
+https://proquestcombo-safaribooksonline-com.ezproxy.torontopubliclibrary.ca/book/web-development/9781789951295/handling-basic-configurations/1575dbba_4e58_4996_a796_6749f466790a_xhtml#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE3ODk5NTEyOTUlMkYyYTUxZDQ2MF80ZGI4XzQ3NzJfODczNV9hMzBkMWE2YzE0Y2FfeGh0bWwmcXVlcnk9
+
+
 #pip3 install flask
 
 Chapter 1: Hello, World! 

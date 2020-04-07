@@ -1,0 +1,11 @@
+{%  extends "index.html" %}
+
+{% block content %}
+    <div>
+        <h1>
+            {% for i in cnt %}
+            <p> Hello, {{ user }} </p>
+            {% endfor %}
+        </h1>
+    </div>
+{% endblock %}

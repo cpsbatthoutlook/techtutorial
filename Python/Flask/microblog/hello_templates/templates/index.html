@@ -1,0 +1,23 @@
+<html>
+<title>
+    {% if cps_title %}
+       {{ cps_title }}
+    {% else %}
+       No title
+    {% endif %}
+
+</title>
+
+<body>
+    <div>
+        <a href="/index"> Home </a>
+        <a href="/else"> Else </a>
+    </div>
+
+    {% block content %} 
+    {% endblock %} 
+
+    {% include 'include.html' %}
+</body>
+
+</html>

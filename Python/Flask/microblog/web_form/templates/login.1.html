@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> Sign in </h1>
+<form action="" method="post" novalidate>
+    {{ f.hidden_tag() }}
+    <p>
+        {{ f.user.label }} <br> {{ f.user(size=32) }} 
+        <br>
+    </p>
+    <p>
+        {{ f.password.label }} <br> {{ f.password(size=32) }}
+    </p>
+    <p>
+        {{ f.remember.label }} <br> {{  f.remember() }}
+    </p>
+    <p>
+        {{  f.submit() }}
+    </p>
+</form>
+
+{% endblock %}

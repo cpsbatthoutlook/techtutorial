@@ -1,0 +1,27 @@
+<html>
+<title>
+    {{ title }}
+</title>
+
+<body>
+    <h3> Base.html </h3> <br>
+    <div>
+        <a href="/index">home</a> <a href="/login">Login</a>
+    </div><br>
+    <br>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
+    <hr>
+    {% block content %} {% endblock %}
+</body>
+
+</html>
