@@ -6,3 +6,4 @@
 **/id_rsa.pub
 **/*.ppk
 **/__pycache__
+**/.vscode

@@ -1,0 +1,17 @@
+Dockerize
+
+https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-18-04
+https://testdriven.io/blog/dockerizing-flask-with-postgres-gunicorn-and-nginx/
+
+
+
+Video : Flask full stack
+https://proquestcombo-safaribooksonline-com.ezproxy.torontopubliclibrary.ca/video/web-development/9781789957464
+
+
+
+Tutorials 
+https://www.fullstackpython.com/flask.html
+https://www.codementor.io/@garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
+
+
