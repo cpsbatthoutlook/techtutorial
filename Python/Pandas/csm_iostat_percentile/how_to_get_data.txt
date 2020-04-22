@@ -1,0 +1,6 @@
+ echo "TIME,ReadPerSec, WritePerSec,KReadPerSec,KWritePerSec, wsvc, ACTV, WSVC_T, ACTV_T, w, b, dEVICE "
+ col=['TIME', 'ReadPerSec', ' WritePerSec', 'KReadPerSec', 'KWritePerSec', ' wsvc', ' ACTV', 'WSVC_T', ' ACTV_T', ' w', ' b', ' dEVICE']
+ iostat -xntpz 2 | perl -ane 'print localtime()." $_" if /c[6789].*s2/;'
+ #perl -MPOSIX -lane 'print strftime "%F-%T $_", localtime()'
+ script iostat_`date +%Y%m%d`
+ iostat -xntpz 2 | perl -MPOSIX -lane 'print strftime "%F-%T $_", localtime() if  /c[6789].*s2/;'
