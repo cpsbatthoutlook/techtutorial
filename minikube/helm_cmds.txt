@@ -1,0 +1,10 @@
+alias h='helm '
+helm version --short
+
+dd=demo-guestbook
+h install demo-guestbook guestbook  ## install guestbook chart
+h list --short
+h get manifest demo-guestbook  # Get the YAML
+ h rollback demo-guestbook 1
+h history demo-guestbook
+h delete $dd
