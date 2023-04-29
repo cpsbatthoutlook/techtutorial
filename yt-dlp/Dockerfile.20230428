@@ -1,0 +1,20 @@
+FROM python:3.9-slim
+LABEL maintainer="Chander Batth"
+ARG NB_USER="cbatth"
+ARG NB_UID="1000"
+ARG NB_GID="100"
+ARG HOME="/home/${NB_USER}"
+#
+COPY install_yt-dlp.bash ${HOME}
+CMD  ${HOME}/install_yt-dlp.bash
+COPY Dockerfile ${HOME}
+#COPY requirements.txt ${HOME}
+#COPY requirements.txt /tmp
+RUN  apt update && apt upgrade && apt -y install curl 
+RUN  curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && chmod a+rx /usr/local/bin/yt-dlp  # Make executable
+# Configure container startup
+#CMD ["python3"]
+ENTRYPOINT ["yt-dlp"]
+# Switch back to jovyan to avoid accidental container runs as root
+USER ${NB_UID}
+#WORKDIR "${HOME}"
